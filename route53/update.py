@@ -58,6 +58,8 @@ def get_records(line: str, zone_list: list):
     current_ip = get_dynamic_ip()
     print(zone_list)
     print(line)
+    #some code should go here to compare 'line' to 'zone_list' to pull out the 'line' hosted zone ID to
+    # pass to list_resource_record_sets go get the A record
     
     a_record = r53.list_resource_record_sets(
 
